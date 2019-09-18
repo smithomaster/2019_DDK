@@ -3,7 +3,6 @@
 
 void autonomous() {
     using namespace okapi;
-    rollers.forward(-127);
     if (ALLIANCE == false){ // RED
         if (STACK == false) { // BIG
             if (POSITION == false){ // FAR
@@ -59,7 +58,6 @@ void autonomous() {
             }
         }
     }
-    rollers.stop();
     // drive.moveDistance(1_ft);
     // drive.turnAngle(90_deg);
     // rollers.forward(-127);
